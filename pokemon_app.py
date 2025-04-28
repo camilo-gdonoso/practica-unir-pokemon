@@ -25,6 +25,15 @@ def catch_random_pokemon():
 def mensaje_prueba():
     print(" Modificación desde practica unir, Manuel S. ")
 
+
+def search_pokemon(name):
+    """Buscar pokemon por nombre"""
+    if name.capitalize() in POKEMONS:
+         print(f"¡{name.capitalize} ya existe!")
+    else:
+         print(f"¡{name.capitalize} no existe!")
+
+
 def main():
     print("¡Bienvenido al Mundo Pokémon!")
     print("¿Qué quieres hacer?")
