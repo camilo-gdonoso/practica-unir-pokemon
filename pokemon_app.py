@@ -17,6 +17,15 @@ def catch_random_pokemon():
     pokemon = random.choice(POKEMONS)
     print(f"¡Felicidades! Has atrapado a {pokemon}.")
 
+
+def search_pokemon(name):
+    """Buscar pokemon por nombre"""
+    if name.capitalize() in POKEMONS:
+         print(f"¡{name.capitalize} ya existe!")
+    else:
+         print(f"¡{name.capitalize} no existe!")
+
+
 def main():
     print("¡Bienvenido al Mundo Pokémon!")
     print("¿Qué quieres hacer?")
