@@ -7,15 +7,20 @@ POKEMONS = [
 ]
 
 def list_pokemons():
-    """Muestra todos los Pokémon disponibles."""
+    """Muestra los Pokémon disponibles."""
     print("Lista de Pokémon disponibles:")
     for idx, name in enumerate(POKEMONS, start=1):
         print(f"{idx}. {name}")
 
 def catch_random_pokemon():
-    """Atrapa un Pokémon aleatorio."""
+    """Prueba tu suerte atrapando un Pokémon aleatorio."""
     pokemon = random.choice(POKEMONS)
-    print(f"¡Felicidades! Has atrapado a {pokemon}.")
+    chance = random.random()  # genera un número entre 0 y 1 para agregarle aleatoriedad a la captura
+    if chance < 0.75: # El usuario tendrá 75% de oportunidad para capturar un pokemon
+        print(f"¡Felicidades! Has atrapado a {pokemon}.")
+    else:
+        print(f"¡Oh no! {pokemon} se escapó. Mejor suerte la próxima vez.")
+
 
 def mensaje_prueba():
     print(" Modificación desde practica unir, Manuel S. ")

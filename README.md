@@ -23,6 +23,16 @@ La aplicación incluida (`pokemon_app.py`) permite:
 - Listar los Pokémon disponibles.
 - Atrapar un Pokémon aleatorio.
 
+### Catch Random Pokémon 🎲
+
+La función `catch_random_pokemon()` simula la captura de un Pokémon de forma aleatoria.
+
+- Hay un **75% de probabilidad** de atrapar exitosamente un Pokémon.
+- Hay un **25% de probabilidad** de que el Pokémon se escape y no pueda ser atrapado.
+
+La función elige un Pokémon aleatorio de la lista disponible (`POKEMONS`) y, dependiendo de la suerte, muestra un mensaje de éxito o de consolación.
+
+
 ---
 
 ## 🛠️ Cómo ejecutar la aplicación
