@@ -17,12 +17,16 @@ def catch_random_pokemon():
     pokemon = random.choice(POKEMONS)
     print(f"¡Felicidades! Has atrapado a {pokemon}.")
 
+def mensaje_prueba():
+    print(" Modificación desde practica unir, Manuel S. ")
+
 def main():
     print("¡Bienvenido al Mundo Pokémon!")
     print("¿Qué quieres hacer?")
     print("1. Listar Pokémon")
     print("2. Atrapar un Pokémon aleatorio")
     choice = input("Ingresa el número de tu elección: ")
+    mensaje_prueba()
 
     if choice == "1":
         list_pokemons()
